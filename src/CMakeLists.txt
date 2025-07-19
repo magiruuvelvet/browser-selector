@@ -1,6 +1,6 @@
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
+find_package(Qt6Core REQUIRED)
+find_package(Qt6Gui REQUIRED)
+find_package(Qt6Widgets REQUIRED)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -14,9 +14,9 @@ target_compile_definitions(browser-selector PRIVATE -DQT_NO_FOREACH)
 
 target_link_libraries(browser-selector
 PUBLIC
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
 PRIVATE
     yaml-cpp::yaml-cpp
 )
